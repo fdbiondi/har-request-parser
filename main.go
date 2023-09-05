@@ -134,7 +134,7 @@ func main() {
 
 	for _, entry := range result.Log.Entries {
 
-		if entry.Request.Method == Options {
+		if entry.Request.Method == Options || entry.Request.Method == Get {
 			continue
 		}
 
