@@ -92,6 +92,25 @@ func main() {
 
 	flag.Parse()
 
+	// if true {
+	// 	var exclude_values []struct {string; string}
+	// 	// test_value := make(chan struct {string; string})
+	//
+	// 	for _, param := range strings.Split(exclude_params, ",") {
+	// 		if param_value := strings.Split(param, ":"); len(param_value) != 0 {
+	// 			var name string = param_value[0]
+	// 			var value string = param_value[1]
+	// 			// a := types.NewTuple(&name, &value)
+	// 		// 	exclude_values
+	// 		// struct {Name; Value}{name, value}
+	// 		}
+	//
+	// 		// append(exclude_values, types.*NewTuple(x ...*types.Var)())
+	// 	}
+	//
+	// 	log.Fatal(exclude_values)
+	// }
+
 	filename := flag.Arg(0)
 	if filename := flag.Arg(0); filename == "" {
 		log.Fatalln("Must provide a '.har' file.")
